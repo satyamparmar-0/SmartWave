@@ -158,13 +158,12 @@
           <h5 class="text-primary">Get In Touch</h5>
           <h1 class="mb-3">Contact for any query</h1>
           <p class="mb-2">
-            The contact form is currently inactive. Get a functional and working
-            contact form with Ajax & PHP in a few minutes. Just copy and paste
-            the files, add a little code and you're done.
+            Submit relevant information for live consultation with top product
+            Trading.
           </p>
         </div>
-        <div class="contact-detail position-relative p-5">
-          <div class="row g-5 mb-5 justify-content-center">
+        <div class="contact-detail position-relative p-3 p-md-5">
+          <div class="row g-3 g-lg-5 mb-3 mb-lg-5 justify-content-center">
             <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".3s">
               <div class="d-flex bg-light p-3 rounded">
                 <div
@@ -174,12 +173,12 @@
                   <i class="fas fa-map-marker-alt text-white"></i>
                 </div>
                 <div class="ms-3">
-                  <h4 class="text-primary">Address</h4>
+                  <h4 class="text-primary">8, Mukati Nagar, Indore</h4>
                   <a
                     href="https://goo.gl/maps/Zd4BCynmTb98ivUJ6"
                     target="_blank"
                     class="h5"
-                    >Adress</a
+                    >View on Map</a
                   >
                 </div>
               </div>
@@ -195,7 +194,7 @@
                 <div class="ms-3">
                   <h4 class="text-primary">Call Us</h4>
                   <a class="h5" href="tel:+0123456789" target="_blank"
-                    >+012 3456 7890</a
+                    >9009120679</a
                   >
                 </div>
               </div>
@@ -210,65 +209,81 @@
                 </div>
                 <div class="ms-3">
                   <h4 class="text-primary">Email Us</h4>
-                  <a class="h5" href="mailto:info@example.com" target="_blank"
-                    >info@example.com</a
+                  <a
+                    class="h6 over"
+                    href="mailto:info@example.com"
+                    target="_blank"
+                    >info@smartwavetechnology.in</a
                   >
                 </div>
               </div>
             </div>
           </div>
-          <div class="row g-5">
+          <div class="row g-3 g-lg-5">
             <div class="col-lg-6 wow fadeIn" data-wow-delay=".3s">
               <div>
-                <img src="./img/contact-us.gif" alt="" />
+                <img
+                  src="./img/contact-us.gif"
+                  class="img-fluid"
+                  alt="Contact Us"
+                />
               </div>
             </div>
-            <div class="col-lg-6 wow fadeIn" data-wow-delay=".5s">
-              <div class="p-5 rounded contact-form">
-                <div class="mb-4">
-                  <input
-                    type="text"
-                    class="form-control border-0 py-3"
-                    placeholder="Your Name"
-                  />
-                </div>
-                <div class="mb-4">
-                  <input
-                    type="email"
-                    class="form-control border-0 py-3"
-                    placeholder="Your Email"
-                  />
-                </div>
-                <div class="mb-4">
-                  <input
-                    type="text"
-                    class="form-control border-0 py-3"
-                    placeholder="Project"
-                  />
-                </div>
-                <div class="mb-4">
-                  <textarea
-                    class="w-100 form-control border-0 py-3"
-                    rows="6"
-                    cols="10"
-                    placeholder="Message"
-                  ></textarea>
-                </div>
-                <div class="text-start">
-                  <button
-                    class="btn bg-primary text-white py-3 px-5"
-                    type="button"
-                  >
-                    Send Message
-                  </button>
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input
+                type="hidden"
+                name="access_key"
+                value="123e7ad8-28ee-4248-a899-4d6f3bc868a6"
+              />
+              <div class="col-lg-6 wow fadeIn" data-wow-delay=".5s">
+                <div class="p-3 p-md-5 rounded contact-form">
+                  <div class="mb-4">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control border-0 py-3"
+                      placeholder="Your Name"
+                    />
+                  </div>
+                  <div class="mb-4">
+                    <input
+                      name="email"
+                      type="email"
+                      class="form-control border-0 py-3"
+                      placeholder="Your Email"
+                    />
+                  </div>
+                  <div class="mb-4">
+                    <input
+                      name="project"
+                      type="text"
+                      class="form-control border-0 py-3"
+                      placeholder="Project"
+                    />
+                  </div>
+                  <div class="mb-4">
+                    <textarea
+                      name="message"
+                      class="w-100 form-control border-0 py-3"
+                      rows="6"
+                      placeholder="Message"
+                    ></textarea>
+                  </div>
+                  <div class="text-start">
+                    <button
+                      class="btn bg-primary text-white py-3 px-5"
+                      type="submit"
+                    >
+                      Send Message
+                    </button>
+                  </div>
                 </div>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
-    <!-- Contact End -->
 
     <!-- Footer Start -->
     <div class="container-fluid footer bg-dark wow fadeIn" data-wow-delay=".3s">
@@ -398,6 +413,7 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Template Javascript -->
+    <script src="https://web3forms.com/client/script.js" async defer></script>
     <script src="js/main.js"></script>
   </body>
 </html>
