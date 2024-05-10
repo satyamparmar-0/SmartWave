@@ -14,6 +14,9 @@
   // Initiate the wowjs
   new WOW().init();
 
+  // POP UP STARTED
+  
+
   // Back to top button
   $(window).scroll(function () {
     if ($(this).scrollTop() > 300) {
