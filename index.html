@@ -143,6 +143,16 @@
     </div>
     <!-- Navbar End -->
 
+     <!-- POP UP STARTED -->
+     <div class="popup justify-content-center" id="popup">
+      <div class="popup-content">
+        <span class="close" id="closePopup">&times;</span>
+        <h2 class="font-weight-bold">Only Pay The Amount </h2>
+        <h5 class="font-weight-bold">In the Company Account</h5>
+      </div>
+    </div>
+    <!-- POP UP ENDED -->
+
     <!-- Carousel Start -->
     <div class="container-fluid px-0">
       <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
@@ -354,15 +364,7 @@
 
     <!-- Cards Started -->
 
-        <!-- POP UP STARTED -->
-        <div class="popup justify-content-center" id="popup">
-          <div class="popup-content">
-            <span class="close" id="closePopup">&times;</span>
-            <h2>Only Pay The Amount </h2>
-            <p>To the Company Account</p>
-          </div>
-        </div>
-        <!-- POP UP ENDED -->
+       
 
     <main class="container">
       <h1 class="text-center py-3">Our Price Plan</h1>
@@ -740,8 +742,8 @@
                 </div>
                 <div class="ms-3">
                   <h4 class="text-primary">Call Us</h4>
-                  <a class="h5" href="tel:+0123456789" target="_blank"
-                    >9009120679</a
+                  <a class="h5" href="tel:+0123456789" target="_blank">
+                    +91 9009120679</a
                   >
                 </div>
               </div>
@@ -777,44 +779,55 @@
               </div>
             </div>
             <div class="col-lg-6 wow fadeIn" data-wow-delay=".5s">
-              <div class="p-3 p-md-5 rounded contact-form">
-                <div class="mb-4">
-                  <input
-                    type="text"
-                    class="form-control border-0 py-3"
-                    placeholder="Your Name"
-                  />
+              <form action="https://api.web3forms.com/submit" method="POST">
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="e2bf0791-8893-484d-bc56-c56c48b8c77d"
+                />
+                <div class="p-3 p-md-5 rounded contact-form">
+                  <div class="mb-4">
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control border-0 py-3"
+                      placeholder="Your Name"
+                    />
+                  </div>
+                  <div class="mb-4">
+                    <input
+                      name="email"
+                      type="email"
+                      class="form-control border-0 py-3"
+                      placeholder="Your Email"
+                    />
+                  </div>
+                  <div class="mb-4">
+                    <input
+                      name="project"
+                      type="text"
+                      class="form-control border-0 py-3"
+                      placeholder="Project"
+                    />
+                  </div>
+                  <div class="mb-4">
+                    <textarea
+                      name="message"
+                      class="w-100 form-control border-0 py-3"
+                      rows="6"
+                      placeholder="Message"
+                    ></textarea>
+                  </div>
+                  <div class="text-start">
+                    <button
+                      class="btn bg-primary text-white py-3 px-5"
+                      type="submit"
+                    >
+                      Send Message
+                    </button>
+                  </div>
                 </div>
-                <div class="mb-4">
-                  <input
-                    type="email"
-                    class="form-control border-0 py-3"
-                    placeholder="Your Email"
-                  />
-                </div>
-                <div class="mb-4">
-                  <input
-                    type="text"
-                    class="form-control border-0 py-3"
-                    placeholder="Project"
-                  />
-                </div>
-                <div class="mb-4">
-                  <textarea
-                    class="w-100 form-control border-0 py-3"
-                    rows="6"
-                    placeholder="Message"
-                  ></textarea>
-                </div>
-                <div class="text-start">
-                  <button
-                    class="btn bg-primary text-white py-3 px-5"
-                    type="button"
-                  >
-                    Send Message
-                  </button>
-                </div>
-              </div>
+              </form>
             </div>
           </div>
         </div>
@@ -917,7 +930,7 @@
               >
               <a href="#" class="py-3 text-light border-bottom border-primary"
                 ><i class="fas fa-phone-alt text-secondary me-2"></i>
-                9009120679</a
+                +91 9009120679</a
               >
               <a href="#" class="py-3 text-light border-bottom border-primary"
                 ><i class="fas fa-envelope text-secondary me-2"></i>
@@ -948,8 +961,8 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="js/popup.js"></script>
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/popup.js"></script>
   </body>
 </html>
